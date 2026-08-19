@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow - Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 FocusFlow</h1>
+        <p>Smart Study Planner</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Add Study Task</h2>
+
+            <input type="text" id="subject" placeholder="Subject">
+            <input type="text" id="topic" placeholder="Topic">
+
+            <select id="difficulty">
+                <option value="1">Easy</option>
+                <option value="2">Medium</option>
+                <option value="3">Hard</option>
+            </select>
+
+            <input type="date" id="examDate">
+
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <section class="dashboard">
+            <div class="stat">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat">
+                <h3 id="progress">0%</h3>
+                <p>Progress</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>📅 My Study Plan</h2>
+            <div id="taskList"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
